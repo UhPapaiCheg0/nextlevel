@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView android:id="@+id/tvDate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Diário de hábitos" android:textSize="13sp" android:textColor="@color/muted" />
+            <ProgressBar android:id="@+id/progressDay" android:layout_width="match_parent"
+                android:layout_height="4dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressTint="@color/blue" android:progressBackgroundTint="@color/track" />
+            <LinearLayout android:id="@+id/habitList" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Toque no relógio para medir o tempo de uma atividade · segure um hábito para editar ou excluir"
+                android:textSize="11sp" android:textColor="@color/muted" android:gravity="center"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton android:id="@+id/fab" android:layout_width="52dp" android:layout_height="52dp"
+        android:layout_gravity="bottom|end" android:layout_margin="16dp"
+        android:background="@drawable/bg_fab" android:src="@drawable/ic_clock"
+        android:contentDescription="Cronômetro" />
+</FrameLayout>

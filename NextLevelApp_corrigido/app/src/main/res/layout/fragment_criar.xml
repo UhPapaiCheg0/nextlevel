@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Criar novo hábito"
+            android:textSize="17sp" android:textStyle="bold" android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup android:id="@+id/rgType" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <RadioButton android:id="@+id/rbBuild" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Criar hábito" android:textColor="#FFFFFF"
+                android:checked="true" android:buttonTint="@color/blue" />
+            <RadioButton android:id="@+id/rbQuit" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Abandonar hábito"
+                android:textColor="#FFFFFF" android:buttonTint="@color/blue" />
+        </RadioGroup>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Símbolo minimalista" android:textSize="13sp" android:textColor="@color/gray" />
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:layout_marginBottom="12dp">
+            <LinearLayout android:id="@+id/iconRow" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Nome" android:textSize="13sp" android:textColor="@color/gray" />
+        <EditText android:id="@+id/edName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="12dp"
+            android:hint="Ex.: Meditar 10 minutos" android:textColor="#FFFFFF"
+            android:textColorHint="@color/muted" android:padding="12dp"
+            android:background="@drawable/bg_input" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Cor" android:textSize="13sp" android:textColor="@color/gray" />
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:layout_marginBottom="12dp">
+            <LinearLayout android:id="@+id/colorRow" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <RadioGroup android:id="@+id/rgFreq" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <RadioButton android:id="@+id/rbDiario" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Diário" android:textColor="#FFFFFF"
+                android:checked="true" android:buttonTint="@color/blue" />
+            <RadioButton android:id="@+id/rbSemanal" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Semanal" android:textColor="#FFFFFF"
+                android:buttonTint="@color/blue" />
+        </RadioGroup>
+
+        <TextView android:id="@+id/lblTimes" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Vezes ao dia"
+            android:textSize="13sp" android:textColor="@color/gray" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:background="@drawable/bg_input" android:layout_marginTop="4dp" android:layout_marginBottom="12dp">
+            <Button android:id="@+id/btnMinus" android:layout_width="44dp" android:layout_height="wrap_content"
+                android:text="−" android:textSize="18sp" android:backgroundTint="@color/panel"
+                android:textColor="@color/blue" />
+            <TextView android:id="@+id/tvTimes" android:layout_width="36dp" android:layout_height="wrap_content"
+                android:text="1" android:textSize="15sp" android:textColor="#FFFFFF" android:gravity="center" />
+            <Button android:id="@+id/btnPlus" android:layout_width="44dp" android:layout_height="wrap_content"
+                android:text="+" android:textSize="18sp" android:backgroundTint="@color/panel"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Categoria" android:textSize="13sp" android:textColor="@color/gray" />
+        <Spinner android:id="@+id/spCat" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_input" android:padding="8dp" />
+
+        <CheckBox android:id="@+id/cbAlarm" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Alarme diário" android:textColor="#FFFFFF"
+            android:buttonTint="@color/blue" android:layout_marginBottom="8dp" />
+        <Button android:id="@+id/btnTime" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Horário: 08:00"
+            android:backgroundTint="@color/panel" android:textColor="@color/gray"
+            android:layout_marginBottom="16dp" />
+
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Adicionar hábito"
+            android:backgroundTint="@color/blue" android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

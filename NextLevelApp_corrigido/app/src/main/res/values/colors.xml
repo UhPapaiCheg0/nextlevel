@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="blue">#3B82F6</color>
+    <color name="panel">#0B0B12</color>
+    <color name="track">#232336</color>
+    <color name="gray">#A7ADBA</color>
+    <color name="muted">#6B7280</color>
+</resources>
